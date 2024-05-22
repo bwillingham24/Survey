@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Why did you want to learn how to code? </h1>
+    <p id="description">A short survey for new programmers</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name<input id="name" type="text" placeholder="John Doe" required/></label>
+      <label for="email" id="email-label">Email<input id="email" type="email" placeholder="johndoe@email.com" required/></label>
+      <label for="number" id="number-label">Age<input id="number" type="number" min="15" max="100" placeholder="25" required/></label>
+      <label for="dropdown">Why did you start coding?<select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1"> For fun</option>
+        <option value="2"> Create games</option>
+        <option value="3"> Data science</option>
+        <option value="4"> To make bags</option>
+      </select>
+    </label>
+    <legend>What is your favorite thing about coding?</legend>
+    <label for="creating-new-things"><input id="creating-new-things" name="favorite" type="radio" class="inline" value="creating" checked/>Creating new things</label>
+    <label for="problem-solving"><input id="problem-solving" name="favorite" type="radio" class="inline" value="problem" />Problem solving</label>
+    <label for="critical-thinking"><input id="critical-thinking" name="favorite" type="radio" class="inline" value="critical" />Critical thinking</label>
+    <legend>What is your experience level?</legend>
+    <label for="beginner"><input id="beginner" value="beginner" type="checkbox" class="inline" checked/>Beginner</label>
+    <label for="intermediate"><input id="intermediate" value="intermediate" type="checkbox" class="inline"/>Intermediate</label>
+    <label for="advanced"><input id="advanced" value="advanced" type="checkbox" class="inline"/>Advanced</label>
+    <label for="comments">Please add any additional comments: <textarea id="comments" name="comments" rows="3" cols="30" placeholer="I love to code beacause..."></textarea>
+    </label>
+    <input id="submit" type="submit" value="Submit"/>
+  </form>  
+  </body>    
+</html>  
+
+
+
+
+
+
+
